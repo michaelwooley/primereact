@@ -534,7 +534,7 @@ export class AutoComplete extends Component {
         });
             
         return (
-            <InputText ref={(el) => this.inputEl = ReactDOM.findDOMNode(el)} id={this.props.inputId} type="text" name={this.props.name} 
+            <InputText ref={(el) => this.inputEl = el} id={this.props.inputId} type="text" name={this.props.name} 
                         defaultValue={this.formatValue(this.props.value)}
                         className={inputClassName} style={this.props.inputStyle} autoComplete="off"
                         readOnly={this.props.readonly} disabled={this.props.disabled} placeholder={this.props.placeholder} size={this.props.size}
